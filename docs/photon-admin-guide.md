@@ -106,7 +106,7 @@ The SPECS directory of the GitHub website for Photon OS contains all the package
 
 https://github.com/vmware/photon/tree/master/SPECS
 
-To see the version of a package, in the SPECS directory, click the name of a subdirectory of a package that you want to examine, and then click the `.spec` filename in the subdirectory. For example, the version of OpenJDK, which contains the openjre package that installs the Java class library and the javac Java compiler, looks like this: 
+To see the version of a package, in the SPECS directory, click the name of the subdirectory of the package that you want to examine, and then click the `.spec` filename in the subdirectory. For example, the version of OpenJDK, which contains the openjre package that installs the Java class library and the javac Java compiler, looks like this: 
 
 <pre>
 %define _use_internal_dependency_generator 0
@@ -135,7 +135,7 @@ It contains the libraries files for Java runtime environment
 ...
 </pre>
 
-### Examining the Differences Between the Minimal Version and the Full Version
+### Looking at the Differences Between the Minimal and the Full Version
 
 The minimal version of Photon OS contains about 50 packages. The full version of Photon OS adds several hundred packages to those in the minimal version to create a more fully featured operating system. 
 
@@ -188,7 +188,7 @@ This section demonstrates how to create a virtual machine running Photon OS in V
 1. Select `Installer disk image file (iso)`, click `Browse` to locate the Photon OS ISO that you downloaded from Bintray, and then click `Next`.
 
 1. For the guest operating system, select `Linux`. From the `Version` drop-down menu, select `VMware Photon 64-bit`. If you have an older version of VMware Workstation and Photon does not appear in the list, select `Other Linux 3.x kernel 64-bit`.
-![Alt text](images/ws-new-vm.png)\
+![Alt text](images/ws-new-vm.png)
 
 1. Click `Next` through the remaining dialog boxes of the wizard,  either accepting the default settings, which is recommended, or making the changes that you want, and then click `Finish`.
 
@@ -225,7 +225,7 @@ The default password for the root account is `changeme`, and you must change it 
 
 There are other options for installing Photon OS in vSphere, such as building an ISO from the source code. For more information about the versions of Photon and their installation options, see [Running Photon OS on vSphere](https://github.com/vmware/photon/wiki/Running-Project-Photon-on-vSphere).
 
-### Rapidly Deploy the Photon OS OVA in VMware Workstation 12 Pro
+### Rapidly Deploying the Photon OS OVA in VMware Workstation 12 Pro
 
 Here's how to rapidly deploy the OVA for Photon in VMware Workstation 12 Pro by using an up-to-date version of Firefox. The procedure in other browsers or another version of Workstation might be different. 
 
@@ -1156,7 +1156,7 @@ In the example above, it is OK that the state of the Docker container is unmanag
 
 For more information about `networkctl` commands and options, see https://www.freedesktop.org/software/systemd/man/networkctl.html.
 
-### Turn on Network Debugging
+### Turning on Network Debugging
 
 You can set `systemd-networkd` to work in debug mode so that you can analyze log files with debugging information to help troubleshoot networking problems. The following procedure turns on network debugging by adding a drop-in file in /etc/systemd to customize the default systemd configuration in /usr/lib/systemd. 
 
@@ -1284,7 +1284,7 @@ After running the cloud-init command above, check the cloud-init log file:
 
 Finally, attach the ISO to the Photon OS virtual machine as a CD-ROM and reboot it so that the changes specified by seed.iso take effect. In this case, cloud-init sets the hostname and adds the vim package.
 
-### Creating a Photon OS Machine on EC2
+### Customizing a Photon OS Machine on EC2
 
 This section shows you how to upload an `ami` image of Photon OS to Amazon Elastic Compute Cloud, or EC2, and customize the Photon OS machine by using cloud-init with an EC2 data source. The ami version of Photon OS is available as a free download on Bintray:
 
@@ -1350,7 +1350,7 @@ For more information on using cloud-init user data on EC2, see [Running Commands
 
 With Photon OS, you can also build cloud images on Google Compute Engine and other cloud providers; for more information, see [Compatible Cloud Images](https://github.com/vmware/photon/blob/master/docs/cloud-images.md).
 
-### Creating a Photon OS Machine on GCE
+### Running a Photon OS Machine on GCE
 
 Photon OS comes in a preconfigured image ready for Google Cloud Engine. This section demonstrates how to create a Photon OS instance on Google Cloud Engine with and without cloud-init user data.
 
