@@ -278,13 +278,6 @@ You can then connect to the Photon OS machine with the root account over SSH:
 
 	steve@ubuntu:~$ ssh root@192.168.137.131
 
-<!-- 
-### Connecting with SFTP
-
-Connect with SFTP
-Ask for Password
--->
-
 ### Deploying Photon OS on a Mac with AppCatalyst
 
 VMware AppCatalyst brings the data center to your Mac desktop. AppCatalyst furnishes a Mac computer with a free hypervisor for creating virtual machines that run Photon OS, which is bundled with AppCatalyst. 
@@ -341,8 +334,6 @@ If you need to troubleshoot, the log files for AppCatalyst reside here:
 	/Users/<your_username>/Library/Logs/VMware
 
 Virtual machines in AppCatalyst can be managed through its API. For more information, see the [AppCatalyst documentation](http://getappcatalyst.com/docs/Tech_Preview_August/) and the [AppCatalyst community site](https://communities.vmware.com/community/vmtn/devops/vmware-appcatalyst).
-
-<!-- ## Deployment -->
 
 ### PXE Boot
 
@@ -853,8 +844,6 @@ Although systemd maintains compatibility with init.d scripts, you should, as a b
 
 ## Managing the Network Configuration
 
-<!-- using https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/ ??  THERE IS A CONFIG SETTING FOR THIS?? THE ANSWER IS NO BY DEFAULT -->
-
 The network service, which is enabled by default, starts when the system boots. You manage the network service by using systemd commands, such as systemd-networkd, systemd-resolvd, and networkctl. You can check its status of the network service by running the following command: 
 
 	systemctl status systemd-networkd
@@ -1189,9 +1178,6 @@ When you are finished debugging the network connections, turn debugging off by d
 
 	rm /etc/systemd/system/systemd-networkd.service.d/10-loglevel-debug.conf
 
-<!-- ### Configuring Network with cloud-init and cloud-config
--->
-
 ### Mounting a Network File System
 
 To mount a network file system, Photon OS requires nfs-utils. The nfs-utils package contains the daemon, userspace server, and client tools for the kernel Network File System, or NFS. The tools include mount.nfs, umount.nfs, and showmount. 
@@ -1304,7 +1290,7 @@ The following code assumes you have installed and set up the Amazon AWS CLI and 
 	$ ec2-upload-bundle --manifest ./bundled/photon-ami.manifest.xml --bucket <bucket-name> --access-key <Account Access Key> --secret-key <Account Secret key>
 	$ ec2-register <bucket-name>/photon-ami.manifest.xml --name photon-ami --architecture x86_64 --virtualization-type hvm
 
-In the following command, the `--user-data-file` option instructs cloud-init to import the cloud-config data in `user-data.txt`. The next command assumes you have created the keypair aws.pem and the group ami-validation as well as uploaded the user-data.txt file to the right place in the Amazon cloud; see the EC2 documentation.  <!-- upload it with the bundle cmd?? -->
+In the following command, the `--user-data-file` option instructs cloud-init to import the cloud-config data in `user-data.txt`. The next command assumes you have created the keypair aws.pem and the group ami-validation as well as uploaded the user-data.txt file to the right place in the Amazon cloud; see the EC2 documentation.
 
 	$ ec2-run-instances $AMI_ID -t m3.medium -k aws -g ami-validation --user-data-file user-data.txt
 	$ ec2-describe-instances
