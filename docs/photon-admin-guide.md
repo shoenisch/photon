@@ -72,8 +72,7 @@
 -   [Docker Containers](#docker-containers)
 -   [Kubernetes](#kubernetes)
 -   [RPM-OSTree](#rpm-ostree)
--   [Disabling TLS 1.0 to Improve Transport Layer
-    Security](#disabling-tls-1.0-to-improve-transport-layer-security)
+-   [Disabling TLS 1.0 to Improve Transport Layer Security](#disabling-tls-1.0-to-improve-transport-layer-security)
 -   [Building a Package from a Source
     RPM](#building-a-package-from-a-source-rpm)
 -   [References](#references)
@@ -182,16 +181,16 @@ This section demonstrates how to create a virtual machine running Photon OS in V
 
 	https://bintray.com/vmware/photon/iso/view
 
-2. In VMware Workstation, type Ctrl+N to create a new virtual machine. 
+1. In VMware Workstation, type Ctrl+N to create a new virtual machine. 
 
-3. In the New Virtual Machine Wizard, select `Typical`, and then click `Next`.
+1. In the New Virtual Machine Wizard, select `Typical`, and then click `Next`.
 
-4. Select `Installer disk image file (iso)`, click `Browse` to locate the Photon OS ISO that you downloaded from Bintray, and then click `Next`.
+1. Select `Installer disk image file (iso)`, click `Browse` to locate the Photon OS ISO that you downloaded from Bintray, and then click `Next`.
 
 1. For the guest operating system, select `Linux`. From the `Version` drop-down menu, select `VMware Photon 64-bit`. If you have an older version of VMware Workstation and Photon does not appear in the list, select `Other Linux 3.x kernel 64-bit`.
-![Alt text](images/ws-new-vm.png)
+![Alt text](images/ws-new-vm.png)\
 
-5. Click `Next` through the remaining dialog boxes of the wizard,  either accepting the default settings, which is recommended, or making the changes that you want, and then click `Finish`.
+1. Click `Next` through the remaining dialog boxes of the wizard,  either accepting the default settings, which is recommended, or making the changes that you want, and then click `Finish`.
 
 1. Power on the virtual machine and, in the Workstation window containing Photon, press Enter to start the installation.
 ![installer](images/photon-installer-sm.png)
