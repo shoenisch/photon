@@ -3,9 +3,8 @@
 -   [Introduction](#introduction)
     -   [Examining the Packages in the SPECS Directory on
         Github](#examining-the-packages-in-the-specs-directory-on-github)
-    -   [Examining the Differences Between the Minimal Version and the
-        Full
-        Version](#examining-the-differences-between-the-minimal-version-and-the-full-version)
+    -   [Looking at the Differences Between the Minimal and the Full
+        Version](#looking-at-the-differences-between-the-minimal-and-the-full-version)
     -   [The Root Account and the sudo and su
         Commands](#the-root-account-and-the-sudo-and-su-commands)
 -   [Quick Start](#quick-start)
@@ -14,8 +13,8 @@
         Workstation](#obtaining-the-iso-from-bintray-and-creating-a-photon-os-vm-in-vmware-workstation)
     -   [Installing the OVA for the Minimal Version in
         vSphere](#installing-the-ova-for-the-minimal-version-in-vsphere)
-    -   [Rapidly Deploy the Photon OS OVA in VMware Workstation 12
-        Pro](#rapidly-deploy-the-photon-os-ova-in-vmware-workstation-12-pro)
+    -   [Rapidly Deploying the Photon OS OVA in VMware Workstation 12
+        Pro](#rapidly-deploying-the-photon-os-ova-in-vmware-workstation-12-pro)
     -   [Root Password Rules](#root-password-rules)
     -   [Permitting Root Login with
         SSH](#permitting-root-login-with-ssh)
@@ -57,7 +56,7 @@
         IPv6](#combining-dhcp-and-static-ip-addresses-with-ipv4-and-ipv6)
     -   [Inspecting the Status of Network Links with
         `networkctl`](#inspecting-the-status-of-network-links-with-networkctl)
-    -   [Turn on Network Debugging](#turn-on-network-debugging)
+    -   [Turning on Network Debugging](#turning-on-network-debugging)
     -   [Mounting a Network File
         System](#mounting-a-network-file-system)
     -   [Installing the Packages for tcpdump and netcat with
@@ -65,17 +64,19 @@
 -   [Cloud-Init on Photon OS](#cloud-init-on-photon-os)
     -   [Creating a Stand-Alone Photon Machine with
         cloud-init](#creating-a-stand-alone-photon-machine-with-cloud-init)
-    -   [Creating a Photon OS Machine on
-        EC2](#creating-a-photon-os-machine-on-ec2)
-    -   [Creating a Photon OS Machine on
-        GCE](#creating-a-photon-os-machine-on-gce)
+    -   [Customizing a Photon OS Machine on
+        EC2](#customizing-a-photon-os-machine-on-ec2)
+    -   [Running a Photon OS Machine on
+        GCE](#running-a-photon-os-machine-on-gce)
 -   [Docker Containers](#docker-containers)
 -   [Kubernetes](#kubernetes)
 -   [RPM-OSTree](#rpm-ostree)
--   [Disabling TLS 1.0 to Improve Transport Layer Security](#disabling-tls-1.0-to-improve-transport-layer-security)
+-   [Disabling TLS 1.0 to Improve Transport Layer
+    Security](#disabling-tls-1.0-to-improve-transport-layer-security)
 -   [Building a Package from a Source
     RPM](#building-a-package-from-a-source-rpm)
 -   [References](#references)
+
 
 ## Introduction
 
