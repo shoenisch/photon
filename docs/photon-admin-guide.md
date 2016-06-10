@@ -189,14 +189,12 @@ This section demonstrates how to create a virtual machine running Photon OS in V
 4. Select `Installer disk image file (iso)`, click `Browse` to locate the Photon OS ISO that you downloaded from Bintray, and then click `Next`.
 
 1. For the guest operating system, select `Linux`. From the `Version` drop-down menu, select `VMware Photon 64-bit`. If you have an older version of VMware Workstation and Photon does not appear in the list, select `Other Linux 3.x kernel 64-bit`.
-
-![Alt text](/av/i/ws-new-vm.png)\
+![Alt text](images/ws-new-vm.png)
 
 5. Click `Next` through the remaining dialog boxes of the wizard,  either accepting the default settings, which is recommended, or making the changes that you want, and then click `Finish`.
 
-o1. Power on the virtual machine and, in the Workstation window containing Photon, press Enter to start the installation.  
-
-[[installer](/av/i/photon-installer-sm.png)\
+1. Power on the virtual machine and, in the Workstation window containing Photon, press Enter to start the installation.
+![installer](images/photon-installer-sm.png)
 
 1. During disk setup, the installer might ask you to confirm that this will erase the disk. If so, accept the default value of `yes` by hitting your Enter key.
 
@@ -238,11 +236,11 @@ In Firefox, download the OVA for the minimal version of Photon OS from this URL:
 
 In the download dialog box, select `Open with VMware Workstation (default)`, like this:
 
-![Alt text](/av/i/ova-firefox.png)
+![Alt text](images/ova-firefox.png)
 
 In the Workstation Import dialog box, click Import.
 
-![Alt text](/av/i/ova-import.png)
+![Alt text](images/ova-import.png)
 
 Workstation creates a virtual machine from the Photon OS OVA template in a few seconds. In Workstation, power on the virtual machine and log in as root with the initial password of `changeme`.
 
