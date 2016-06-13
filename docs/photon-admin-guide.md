@@ -1,4 +1,4 @@
-# Photon Administration Guide
+# Photon OS Administration Guide
 
 -   [Introduction](#introduction)
     -   [Examining the Packages in the SPECS Directory on
@@ -80,9 +80,11 @@
 
 ## Introduction
 
-This guide covers managing packages, controlling services with systemd, setting up networking, initializing Photon OS with cloud-init, running Docker containers, and working with other technologies, such as Kubernetes. 
+This guide describes the fundamentals of administering Photon OS, the free, open-source minimalist Linux operating system from VMware that is optimized for cloud computing platforms, VMware vSphere deployments, and applications native to the cloud. 
 
-Photon OS is a Linux container host optimized for vSphere and cloud-computing platforms such as Amazon Elastic Compute and Google Compute Engine. Photon OS is lightweight and extensible. It supports the most common container formats, including Docker, Rocket, and Garden. Photon OS includes a yum-compatible, package-based lifecycle management system called tdnf and optionally works with RPM-OSTree for image-based system versioning. 
+The guide covers the basics of managing packages, controlling services with systemd, setting up networking, initializing Photon OS with cloud-init, running Docker containers, and working with other technologies, such as Kubernetes. 
+
+Photon OS is a Linux container host optimized for vSphere and cloud-computing platforms such as Amazon Elastic Compute and Google Compute Engine. As a lightweight and extensible operating system, Photon OS works with the most common container formats, including Docker, Rocket, and Garden. Photon OS includes a yum-compatible, package-based lifecycle management system called tdnf and optionally works with RPM-OSTree for image-based system versioning. 
 
 When used with development tools and environments such as VMware Fusion, VMware Workstation, HashiCorp (Vagrant and Atlas), and production runtime environments (vSphere, vCloud Air), Photon OS lets you seamlessly migrate container-based applications from development to production. With a small footprint and fast boot and run times, Photon OS is optimized for cloud computing and cloud  applications.  
 
@@ -159,7 +161,7 @@ One notable difference between the two versions of Photon OS pertains to OpenJDK
 
 A later section covers tdnf. 
 
-### The Root Account and the sudo and su Commands
+### The Root Account and the `sudo` and `su` Commands
 
 This guide assumes that you are logged in to Photon OS with the root account and running commands as root. The sudo program comes with the full version of Photon OS. On the minimal version, you must install sudo with tdnf if you want to use it. As an alternative to installing sudo on the minimal version, you can switch users as needed with the `su` command to run commands that require root privileges. 
 
